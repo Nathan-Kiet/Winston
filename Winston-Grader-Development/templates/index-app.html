@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Winston</title>
+    <meta name="description" content="Best suite">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="{{url_for('static', filename='/assets/css/Footer-Basic-icons.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        #headerBackground {
+            height: 900px;
+            background: url({{ url_for('static', filename='assets/img/circle-scatter-haikei.svg')}});
+            color: rgb(255,255,255);
+            
+        }
+        #blob {
+            background: url({{ url_for('static', filename='assets/img/blob.svg')}}) center / contain no-repeat;
+        }
+        #heads {
+            color: rgb(255,255,255); 
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav" style="background: rgb(45, 44, 56);margin-top: 0px;">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span class="bs-icon-sm bs-icon-circle bs-icon-primary shadow d-flex justify-content-center align-items-center me-2 bs-icon" style="width: 40px;height: 40px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pen" style="width: 24px;height: 24px;">
+                        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"></path>
+                    </svg></span><span style="font-size: 24px;">Winston</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="true" data-bs-toggle="dropdown">Tools</a>
+                        <div class="dropdown-menu dropdown-menu-dark" style="background: rgb(45,44,56);">
+                            <a class="dropdown-item" href="/overall-grade/">Enter Grades</a>
+                            <a class="dropdown-item" href="/gpa/">GPA Calculator</a>
+                            <a class="dropdown-item" href="/grader/">Grader</a>
+                            <a class="dropdown-item" href="/radar/">Radar Scale</a>
+                            <a class="dropdown-item" href="/overall-grade/">Overall Grades</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../contacts.html">Contacts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="enter.html">Enter Grades</a></li>
+                </ul><a class="btn btn-primary shadow" role="button" href="../Later/signup.html">Sign up</a>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-dark py-5" id="headerBackground">
+        <div class="container py-5">
+            <div class="row py-5" style="padding: 47px 0px;margin-bottom: -30px;height: 922px;">
+                <div class="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-end mb-4">
+                    <div style="max-width: 450px;" id="heads">
+                        <h1 class="fw-bold" data-aos="fade-right" data-aos-duration="600" data-aos-delay="50">Winston Grader<br></h1>
+                        <h2 class="fs-3 fw-bold text-start" data-aos="fade-right" data-aos-duration="600" style="padding-top: 35px;padding-right: 0px;padding-left: 0;">Designed by students&nbsp;<br>for students</h2><button class="btn btn-primary" type="button">Enter Your Grades</button>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="p-5 mx-lg-5" id="blob" style="background: url(&quot;~/static/assets/img/blob.svg&quot;) center / contain no-repeat;"><img class="rounded img-fluid shadow w-100 fit-cover" id="phoneScreen" style="min-height: 300px;height: 600px;" src="{{ url_for('static', filename='assets/img/phone-screen.png')}}"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container" style="padding: 0px;margin-top: 15px;margin-bottom: 15px;">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-center d-flex flex-column justify-content-center align-items-center py-3">
+                        <div class="bs-icon-xl bs-icon-circle bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block mb-2 bs-icon lg"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-window-sidebar">
+                                <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"></path>
+                                <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v2H1V3a1 1 0 0 1 1-1h12zM1 13V6h4v8H2a1 1 0 0 1-1-1zm5 1V6h9v7a1 1 0 0 1-1 1H6z"></path>
+                            </svg></div>
+                        <div class="px-3">
+                            <h2 class="fw-bold mb-0">Clean</h2>
+                            <p class="mb-0">Interface</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center d-flex flex-column justify-content-center align-items-center py-3">
+                        <div class="bs-icon-xl bs-icon-circle bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block mb-2 bs-icon lg"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-tools">
+                                <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"></path>
+                            </svg></div>
+                        <div class="px-3">
+                            <h2 class="fw-bold mb-0">4+</h2>
+                            <p class="mb-0">Tools</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center d-flex flex-column justify-content-center align-items-center py-3">
+                        <div class="bs-icon-xl bs-icon-circle bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block mb-2 bs-icon lg"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-currency-dollar">
+                                <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"></path>
+                            </svg></div>
+                        <div class="px-3">
+                            <h2 class="fw-bold mb-0">Free</h2>
+                            <p class="mb-0">No cost</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container bg-dark border rounded border-dark py-5">
+            <div class="row">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <p class="fw-bold text-success mb-2">Our Tools</p>
+                    <h3 class="fw-bold">What We Can Do For You</h3>
+                </div>
+            </div>
+            <div class="py-5 p-lg-5">
+                <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
+                    <div class="col mb-5">
+                        <div class="card shadow-sm">
+                            <div class="card-body px-4 py-5 px-md-5">
+                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style="top: 1rem;right: 1rem;position: absolute;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-calculator text-success">
+                                        <path d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"></path>
+                                        <path d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-4z"></path>
+                                    </svg></div>
+                                <h5 class="fw-bold card-title">GPA Calculator</h5>
+                                <p class="text-muted card-text mb-4">Calculates your GPA with extreme accuracy.<br><br></p><button class="btn btn-primary shadow" type="button">Learn more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card shadow-sm">
+                            <div class="card-body px-4 py-5 px-md-5">
+                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style="top: 1rem;right: 1rem;position: absolute;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pie-chart text-success">
+                                        <path d="M7.5 1.018a7 7 0 0 0-4.79 11.566L7.5 7.793V1.018zm1 0V7.5h6.482A7.001 7.001 0 0 0 8.5 1.018zM14.982 8.5H8.207l-4.79 4.79A7 7 0 0 0 14.982 8.5zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"></path>
+                                    </svg></div>
+                                <h5 class="fw-bold card-title">Grader</h5>
+                                <p class="text-muted card-text mb-4">Will show you a detailed breakdown of your grades in a visually pleasing way.<br><br></p><button class="btn btn-primary shadow" type="button">Learn more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body px-4 py-5 px-md-5">
+                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style="top: 1rem;right: 1rem;position: absolute;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-text-left text-success">
+                                        <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"></path>
+                                    </svg></div>
+                                <h5 class="fw-bold card-title">Overall Grades</h5>
+                                <p class="text-muted card-text mb-4">Will show you all of your grades for the year for each one of your classes.&nbsp;<br><br></p><button class="btn btn-primary shadow" type="button">Learn more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body px-4 py-5 px-md-5">
+                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style="top: 1rem;right: 1rem;position: absolute;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-chart-radar text-success" style="width: 40px;height: 40px;">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 3l9.5 7l-3.5 11h-12l-3.5 -11z"></path>
+                                        <path d="M12 7.5l5.5 4l-2.5 5.5h-6.5l-2 -5.5z"></path>
+                                        <path d="M2.5 10l9.5 3 9.5-3"></path>
+                                        <path d="M12 3v10l6 8"></path>
+                                        <path d="M6 21l6-8"></path>
+                                    </svg></div>
+                                <h5 class="fw-bold card-title">Radar Scale</h5>
+                                <p class="text-muted card-text mb-4">Will show you which classes/subjects that you are strong in and ones that you are not as good at.</p><button class="btn btn-primary shadow" type="button">Learn more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section></section>
+    </section>
+    <section></section>
+    <section class="py-5"></section>
+    <footer class="bg-dark">
+        <footer class="text-center">
+            <div class="container text-muted py-4 py-lg-5">
+                <ul class="list-inline">
+                    <li class="list-inline-item me-4"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-github" style="width: 30px;height: 30px;">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                            </svg></a></li>
+                    <li class="list-inline-item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram" style="width: 30px;height: 30px;">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                            </svg></a></li>
+                </ul>
+                <p class="mb-0">Copyright © 2022 Winston</p>
+            </div>
+        </footer>
+    </footer>
+    <script type=text/javascript src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='assets/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='assets/js/bs-init.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='assets/js/script.js') }}"></script>
+</body>
+
+</html>

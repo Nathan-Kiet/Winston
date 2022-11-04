@@ -1,0 +1,2 @@
+let gameBoard = [];
+let lastTurn;
