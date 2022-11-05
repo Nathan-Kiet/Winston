@@ -1,3 +1,5 @@
+Json file uses numbers to save class weight, these numbers and their class correlation are listed below
+
 0 null
 1 standard
 2 honors
