@@ -1,0 +1,26 @@
+{   
+    "C1": {
+        "info": {
+            "cName": "",
+            "cType": 0
+        },
+        "Q1":{
+            "minor": {
+            "aName":[],
+            "date":[],
+            "gGrade":[],
+            "fGrade":[],
+            "redo":[],
+            "weight": 0.7
+            },
+            "major": {
+            "aName":[],
+            "date":[],
+            "gGrade":[],
+            "fGrade":[],
+            "redo":[],
+            "weight": 0.3
+            }
+        }
+    }
+}

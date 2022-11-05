@@ -1,0 +1,74 @@
+{   
+    "C1": {
+        "info": {
+            "cName": "AP World History",
+            "cType": 4
+        },
+        "Q1":{
+            "minor": {
+            "aName":["CP (class participation) Day 1", "CP - Against All odds clip and Early humans discussion", "HW - Early Civilization Chart (Chp 2-5)assignment", "Signed Syllabusassignment", "CP - Early Civ review and map workassignment", "HW - Early Man unit 9 terms", "CP - Judaism and Hinduism", "HW - Judaism and Hinduism", "CP - China review and intro to Buddhism", "HW - China (Confucianism) and philosophy)assignment"],
+            "date":["8/30/22 11:59pm", "9/01/22 11:59pm", "9/01/22 11:59pm", "9/01/22 11:59pm", "9/06/22 11:59pm", "9/06/22 11:59pm", "9/08/22 11:59pm", "9/08/22 11:59pm", "9/12/22 11:59pm", "9/12/22 11:59pm"],
+            "gGrade":[7, 7, 10, 5, 7, 10, 7, 10, 5, 10],
+            "fGrade":[5, 5, 10, 5, 5, 10, 5, 10, 5, 10],
+            "redo":[false, false, false, false, false, false, false, false, false, false],
+            "weight": 0.7
+            },
+            "major": {
+            "aName":[],
+            "date":[],
+            "gGrade":[],
+            "fGrade":[],
+            "redo":[],
+            "weight": 0.3
+            }
+        }
+    },
+    "C2": {
+        "info": {
+            "cName": "Pre Calculus",
+            "cType": 3
+        },
+        "Q1":{
+            "minor": {
+            "aName":["Solving Quadratic Equations (U1D2)", "Solving Radical Equations (U1D3)", "Absolute Value Equations and Inequalities (U1D4)", "Dividing Polynomials Graded Drill", "Polynomial Division: Error Analysis Classwork (U1D3)", "Rational Zeros Theorem (U2D5)", "Graphing and Writing Polynomial Functions", "Graphing Rational Functions (U2D10)", "Rational Equations and Inequalities (U2D11)"],
+            "date":["9/07/22 11:00am", "9/09/22 11:00am", "9/13/22 11:00am", "9/28/22 11:20am", "9/30/22 11:00am", "10/07/22 11:00am", "10/13/22 11:00am", "10/25/22 11:00am", "10/27/22 11:00am"],
+            "gGrade":[6, 8.5, 9.5, 4, 8, 10, 11.75, 10, 8],
+            "fGrade":[8, 9, 10, 4, 8, 10, 13, 10, 8],
+            "redo":[true, true, true, true, true, true, true, true, true],
+            "weight": 0.7
+            },
+            "major": {
+            "aName":["Unit 1 Summative Assessment", "Unit 2 Mid-Unit Assessment"],
+            "date":["9/19/22 12:30pm", "10/31/22 11:59am"],
+            "gGrade":[88, 87.5],
+            "fGrade":[100, 100],
+            "redo":[false, false],
+            "weight": 0.3
+            }
+        }
+    },
+    "C3": {
+        "info": {
+            "cName": "Concer Band",
+            "cType": 1
+        },
+        "Q1":{
+            "minor": {
+            "aName":["10/14 Exit Ticket", "9/8 Bb Scale With Helpers", "Christmas Songs", "Concert Eb Scale Note Names", "Etude Note Reading", "Exit TIcket 10/20", "Rhythm Counting", "Composition Concert Bbassignment", "Concert Bb Scale and Arpeggio"],
+            "date":[null, null, null, null, null, null, null, "9/14/22 11:59pm", "9/16/22 11:59pm"],
+            "gGrade":[20, 20, 20, 20, 10, 10, 10, 20, 25],
+            "fGrade":[20, 20, 20, 20, 10, 10, 10, 20, 25],
+            "redo":[false, true, true, true, false, false, true, true, true],
+            "weight": 0.7
+            },
+            "major": {
+            "aName":["10/28 Concert Ab, Eb, Bb Keys", "Playing Concert Eb Scale & Arpeggio"],
+            "date":[null, null],
+            "gGrade":[20, 20],
+            "fGrade":[20, 20],
+            "redo":[false, false],
+            "weight": 0.3
+            }
+        }
+    }
+}
